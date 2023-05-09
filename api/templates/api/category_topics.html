@@ -1,0 +1,4 @@
+<h1>{{ category.name }}</h1>
+{% for topic in topics %}
+  <a href="{% url 'api:topic_detail' topic.id %}">{{ topic.title }}</a><br>
+{% endfor %}
